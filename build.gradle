@@ -1,0 +1,16 @@
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+version = '1.0.0'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    testCompile('org.assertj:assertj-core:3.11.1')
+    testCompile 'junit:junit:4.12'
+}
