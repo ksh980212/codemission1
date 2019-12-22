@@ -3,6 +3,6 @@
 ../codePractice/.gradle
 .idea
 
-build
+build/
 
 .gradle
