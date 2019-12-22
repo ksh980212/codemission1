@@ -10,8 +10,10 @@ public class Application {
             Parser parser = new Parser(scannerInput());
             Calculate calculate = new Calculate(parser.getOperatorList(), parser.getNumbersList());
             System.out.println(calculate.getResult());
+
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
+
         }catch(ArithmeticException e){
             System.out.println(e.getMessage());
         }

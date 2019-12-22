@@ -5,17 +5,23 @@ import java.util.List;
 
 public class Calculate {
 
-    private List<Operator> operatorList;
-    private List<BigDecimal> numberList;
     private BigDecimal result;
 
     public Calculate(List<Operator> operatorList, List<BigDecimal> numberList){
-        this.operatorList=operatorList;
-        this.numberList=numberList;
+        validateOperandsAndOperators(operatorList, numberList);
 
         result= numberList.get(0);
+        if(operatorList.isEmpty()){
+            return;
+        }
 
         calculateWholeProblem(operatorList, numberList);
+    }
+
+    public void validateOperandsAndOperators(List<Operator> operatorList, List<BigDecimal> numberList){
+        if(numberList.size()-1 != operatorList.size()){
+            throw new IllegalArgumentException("Wrong String input");
+        }
     }
 
     public BigDecimal getResult(){
