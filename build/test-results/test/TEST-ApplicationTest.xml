@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ApplicationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-22T05:37:39" hostname="DESKTOP-OAAKU2I" time="0.01">
-  <properties/>
-  <testcase name="잘못된_연산자를_입력한다()" classname="ApplicationTest" time="0.01"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
