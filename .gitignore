@@ -2,6 +2,7 @@
 
 ../codePractice/.gradle
 .idea
-/build/
 
-.gradle/
+build
+
+.gradle
